@@ -5,10 +5,12 @@
       <map>
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/background.xml" value="0.25" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/button.xml" value="0.1545" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/button2.xml" value="0.227" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/container_components.xml" value="0.1665" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/edit_text.xml" value="0.1655" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/loginsocial.xml" value="0.203" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_main.xml" value="0.17603850050658562" />
-        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_in.xml" value="0.22" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
       </map>
     </option>
   </component>
