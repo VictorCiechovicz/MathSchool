@@ -26,8 +26,8 @@
 
     <TextView
         android:id="@+id/textMath"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="106dp"
+        android:layout_height="60dp"
         android:layout_marginStart="33dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="179dp"
@@ -48,8 +48,8 @@
 
     <TextView
         android:id="@+id/textSchool"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="43dp"
         android:layout_marginStart="78dp"
         android:layout_marginTop="97dp"
         android:layout_marginEnd="163dp"
@@ -72,7 +72,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="140dp"
         android:layout_marginBottom="476dp"
-        android:src="@drawable/Logo"
+        android:src="@drawable/logosignin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -229,6 +229,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButtonSingUp"
         style="@style/ButtonSignUp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="27dp"
         android:layout_marginBottom="42dp"
@@ -238,5 +239,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewGoogle" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
