@@ -7,14 +7,18 @@
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/background.xml" value="0.25" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/button.xml" value="0.1545" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/button2.xml" value="0.227" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/button3.xml" value="0.266" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/container_components.xml" value="0.1665" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/container_components2.xml" value="0.161" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/edit_text.xml" value="0.1655" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/edit_textemailsignup.xml" value="0.266" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/edit_textsignup.xml" value="0.266" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1215" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/loginsocial.xml" value="0.203" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_main.xml" value="0.17603850050658562" />
-        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
-        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_up.xml" value="0.144" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/content_home.xml" value="0.30526315789473685" />
       </map>
     </option>
   </component>

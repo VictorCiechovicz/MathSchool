@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="ContainerComponents">
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">570dp</item>
         <item name="android:background">@drawable/container_components</item>
     </style>
 
 <style name="Edit_Text">
-<item name="android:layout_width">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:background">@drawable/edit_text</item>
     <item name="android:padding">10dp</item>
@@ -46,7 +45,6 @@
     </style>
 
     <style name="ButtonSignUp">
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">46dp</item>
@@ -64,10 +62,51 @@
 
 
     <style name="ContainerComponents2">
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">454dp</item>
         <item name="android:background">@drawable/container_components2</item>
     </style>
 
+
+    <style name="Edit_TextSignUp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_textsignup</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:maxLength">10</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+        <item name="android:layout_marginTop">116dp</item>
+
+
+    </style>
+
+    <style name="edit_inputEmailSignUp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_textemailsignup</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:maxLength">25</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+        <item name="android:layout_marginTop">116dp</item>
+
+
+    </style>
+
+    <style name="ButtonCreateAccount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">83dp</item>
+        <item name="android:layout_marginRight">83dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingRight">26dp</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/button3</item>
+
+    </style>
 </resources>
