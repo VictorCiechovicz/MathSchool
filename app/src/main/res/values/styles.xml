@@ -87,7 +87,7 @@
         <item name="android:background">@drawable/edit_textemailsignup</item>
         <item name="android:padding">10dp</item>
         <item name="android:maxLength">25</item>
-        <item name="android:layout_marginLeft">45dp</item>
+          <item name="android:layout_marginLeft">45dp</item>
         <item name="android:layout_marginRight">45dp</item>
         <item name="android:layout_marginTop">116dp</item>
 
@@ -108,5 +108,11 @@
         <item name="android:textSize">16sp</item>
         <item name="android:background">@drawable/button3</item>
 
+    </style>
+
+    <style name="ContainerComponentsNavBar">
+        <item name="android:layout_height">514dp</item>
+        <item name="android:layout_width">175dp</item>
+        <item name="android:background">@drawable/container_componentsnavbar</item>
     </style>
 </resources>
