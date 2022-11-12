@@ -27,14 +27,25 @@
         android:layout_height="115dp"
         android:src="@drawable/logosignin"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="208dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="49dp"
-
-
         />
 
+    <TextView
+        android:id="@+id/textSigUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/SignUp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toTopOf="@+id/container_components2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
