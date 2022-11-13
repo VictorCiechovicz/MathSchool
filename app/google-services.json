@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406511384363",
+    "project_id": "mathschool-8a8a2",
+    "storage_bucket": "mathschool-8a8a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406511384363:android:66f5e4018f39ff296df76e",
+        "android_client_info": {
+          "package_name": "com.example.mathschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406511384363-7ki52avkof4t846kaip4am18368ek72h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKLt_ZmQBgzeA815Gv1lhiAC3asELBSKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406511384363-7ki52avkof4t846kaip4am18368ek72h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
