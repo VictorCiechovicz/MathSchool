@@ -150,6 +150,7 @@
         android:id="@+id/button_signin"
         style="@style/Button"
         android:fontFamily="@font/inter_bold"
+        android:onClick="validarAuthenticacao"
         android:text="@string/SignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -201,7 +202,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginBottom="27dp"
         android:src="@drawable/facebookicon"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButtonSingUp"
+        app:layout_constraintBottom_toTopOf="@+id/button_singUp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewGoogle"
         app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="TODO" />
@@ -224,12 +225,12 @@
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="27dp"
         android:src="@drawable/appleicon"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButtonSingUp"
+        app:layout_constraintBottom_toTopOf="@+id/button_singUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewGoogle" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButtonSingUp"
+        android:id="@+id/button_singUp"
         style="@style/ButtonSignUp"
         android:layout_width="0dp"
         android:layout_height="0dp"
