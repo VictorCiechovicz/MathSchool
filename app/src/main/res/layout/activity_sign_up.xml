@@ -8,8 +8,8 @@
 
 
     <View
-        android:id="@+id/container_components2"
-        style="@style/ContainerComponents2"
+        android:id="@+id/background_signup"
+        style="@style/BackgroundSignUp"
         android:layout_height="0dp"
         android:layout_marginTop="114dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
     <ImageView
         android:layout_width="88dp"
         android:layout_height="115dp"
-        android:src="@drawable/logosignin"
+        android:src="@drawable/logosprincipal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="208dp"
@@ -44,7 +44,7 @@
         android:layout_marginLeft="35dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="9dp"
-        app:layout_constraintTop_toTopOf="@+id/container_components2" />
+        app:layout_constraintTop_toTopOf="@+id/background_signup" />
 
     <TextView
         android:id="@+id/edit_firstname"
@@ -58,7 +58,7 @@
         android:layout_marginLeft="35dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="88dp"
-        app:layout_constraintTop_toTopOf="@+id/container_components2" />
+        app:layout_constraintTop_toTopOf="@+id/background_signup" />
 
 
 
@@ -120,7 +120,7 @@
 
     <EditText
         android:id="@+id/edit_emailInputSignUp"
-        style="@style/edit_inputEmailSignUp"
+        style="@style/InputSignUp"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +153,7 @@
 
     <EditText
         android:id="@+id/edit_passwordInputSignUp"
-        style="@style/edit_inputEmailSignUp"
+        style="@style/InputSignUp"
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,9 +175,9 @@
         android:text="@string/MaxNumbers"
         android:textAlignment="center"
         android:textColor="@color/white"
-         android:textSize="10sp"
+         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="23dp"
+        android:layout_marginRight="20dp"
          android:layout_marginTop="50dp"
         app:layout_constraintTop_toBottomOf="@id/edit_emailInputSignUp"
 

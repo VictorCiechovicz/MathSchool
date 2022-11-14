@@ -30,9 +30,7 @@
 
     <item
         android:id="@+id/opt_drawer_logout"
-        android:checkable="true"
         android:icon="@drawable/ic_iconlogout"
-        android:onClick="logout"
         android:title="@string/OptDrawerLogout" />
 
 

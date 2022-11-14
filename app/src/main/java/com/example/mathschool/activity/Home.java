@@ -83,6 +83,13 @@ ActionBarDrawerToggle actionBarDrawerToggle;
 
                     case R.id.opt_drawer_logout:
                         Log.i("MENU_DRAWER_TAG", "Logout");
+                        try{
+                            mAuth.signOut();
+                            finish();
+                            startActivity(new Intent(Home.this,SignIn.class));
+                        }catch ( Exception e){
+                            e.printStackTrace();
+                        }
 
                 }
                 return true;
@@ -92,13 +99,5 @@ ActionBarDrawerToggle actionBarDrawerToggle;
 
 
     }
-    public void logout(View v){
-        try{
-            mAuth.signOut();
-            finish();
-            startActivity(new Intent(Home.this,SignIn.class));
-        }catch ( Exception e){
-            e.printStackTrace();
-        }
-    }
+
 }

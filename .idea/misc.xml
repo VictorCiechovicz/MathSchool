@@ -21,6 +21,7 @@
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_icon__4_.xml" value="0.3635" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_iconbuttonhome.xml" value="0.19" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_iconhome.xml" value="0.3635" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_iconlogout.xml" value="0.278" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_iconprofile.xml" value="0.3635" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_iconroadmap.xml" value="0.3635" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_iconsettings.xml" value="0.157" />
@@ -34,12 +35,13 @@
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_roadmap.xml" value="0.3635" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/ic_settings.xml" value="0.3635" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/loginsocial.xml" value="0.203" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/shape_button_sociallogin.xml" value="0.278" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/drawable/side_nav_bar.xml" value="0.3635" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_home.xml" value="0.18" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_home2.xml" value="0.30526315789473685" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_main.xml" value="0.17603850050658562" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_nav_bar.xml" value="0.33" />
-        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_in.xml" value="0.4548429319371728" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/app_bar.xml" value="0.30526315789473685" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/layout/app_bar_home.xml" value="0.30526315789473685" />
@@ -63,6 +65,7 @@
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/menu/home.xml" value="0.15570175438596492" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/menu/home_with_navigation.xml" value="0.30526315789473685" />
+        <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/menu/itens_drawer_menu.xml" value="0.3048245614035088" />
         <entry key="..\:/Users/Victor Ciechovicz/AndroidStudioProjects/MathSchool/app/src/main/res/menu/navigation_itens.xml" value="0.33" />
       </map>
     </option>
