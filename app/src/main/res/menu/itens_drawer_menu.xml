@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view"
+
+     >
+
+<item
+
+    android:id="@+id/opt_drawer_home"
+    android:title="@string/OptDrawerHome"
+    android:icon="@drawable/ic_iconhome"
+      />
+
+    <item
+        android:id="@+id/opt_drawer_profile"
+        android:title="@string/OptDrawerProfile"
+        android:icon="@drawable/ic_iconprofile"/>
+
+    <item
+        android:id="@+id/opt_drawer_roadmap"
+        android:title="@string/OptDrawerRoadmap"
+        android:icon="@drawable/ic_iconroadmap"/>
+
+    <item
+        android:id="@+id/opt_drawer_settings"
+        android:title="@string/OptDrawerSettings"
+        android:icon="@drawable/ic_iconsettings"/>
+
+    <item
+        android:id="@+id/opt_drawer_logout"
+        android:checkable="true"
+        android:icon="@drawable/ic_iconlogout"
+        android:onClick="logout"
+        android:title="@string/OptDrawerLogout" />
+
+
+
+
+
+</menu>

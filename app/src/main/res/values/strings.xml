@@ -13,14 +13,16 @@
     <string name="MaxNumbers">6 - 14 numbers</string>
     <string name="CreateAccount">Create account</string>
     <string name="ExempleEmail">exemple@email.com</string>
-    <string name="NavBarHome">home</string>
-    <string name="NavBarProfile">profile</string>
-    <string name="NavBarRoadmap">roadmap</string>
-    <string name="NavBarSettings">settings</string>
-    <string name="NavBarLogout">logout</string>
 
+    <string name="OptDrawerHome">home</string>
+    <string name="OptDrawerProfile">profile</string>
+    <string name="OptDrawerRoadmap">roadmap</string>
+    <string name="OptDrawerSettings">settings</string>
+    <string name="OptDrawerLogout">logout</string>
+
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
 
     <string name="todo">TODO</string>
-
 
 </resources>
