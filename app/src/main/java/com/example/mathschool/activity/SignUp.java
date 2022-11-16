@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mathschool.API.ApiClient;
+import com.example.mathschool.API.SignUpRequest;
+import com.example.mathschool.API.SignUpResponse;
 import com.example.mathschool.R;
 import com.example.mathschool.modelo.Usuario;
 import com.example.mathschool.utils.ConfigBD;
@@ -22,12 +25,16 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class SignUp extends AppCompatActivity {
 
-      EditText firstName;
-      EditText lastName;
-      EditText email;
-      EditText password;
+      EditText infirstName;
+      EditText inlastName;
+      EditText inemail;
+      EditText inpassword;
       AppCompatButton buttonCreateAcount;
       FirebaseAuth mAuth;
       Usuario usuario;
@@ -47,32 +54,43 @@ public class SignUp extends AppCompatActivity {
     }
 
     private void inicializar() {
-        firstName = findViewById(R.id.edit_firstnameInputSignUp);
-        lastName = findViewById(R.id.edit_lastnameInputSignUp);
-        email = findViewById(R.id.edit_emailInputSignUp);
-        password = findViewById(R.id.edit_passwordInputSignUp);
+        infirstName = findViewById(R.id.edit_firstnameInputSignUp);
+        inlastName = findViewById(R.id.edit_lastnameInputSignUp);
+        inemail = findViewById(R.id.edit_emailInputSignUp);
+        inpassword = findViewById(R.id.edit_passwordInputSignUp);
         buttonCreateAcount = findViewById(R.id.button_createAccountSignup);
         mAuth = FirebaseAuth.getInstance();
     }
 
+
+
+
     public void validarCampos( View v){
-        String firstname = firstName.getText().toString();
-        String lastname = lastName.getText().toString();
-        String inEmail = email.getText().toString();
-        String inPassword = password.getText().toString();
+        String firstName = infirstName.getText().toString();
+        String lastName = inlastName.getText().toString();
+        String email = inemail.getText().toString();
+        String password = inpassword.getText().toString();
 
-        if(!firstname.isEmpty()){
-                if(!lastname.isEmpty()){
-                        if(!inEmail.isEmpty()){
-                            if(!inPassword.isEmpty()){
+        if(!firstName.isEmpty()){
+                if(!lastName.isEmpty()){
+                        if(!email.isEmpty()){
+                            if(!password.isEmpty()){
 
-                                usuario = new Usuario();
+                                /*usuario = new Usuario();
                                 usuario.setFirstName(firstname);
                                 usuario.setLastName(lastname);
                                 usuario.setEmail(inEmail);
                                 usuario.setPassword(inPassword);
+                                cadastrarUsuario();*/
 
-                                cadastrarUsuario();
+                                SignUpRequest signUpRequest= new SignUpRequest();
+
+                                signUpRequest.setFirstName(firstName);
+                                signUpRequest.setLastname(lastName);
+                                signUpRequest.setEmail(email);
+                                signUpRequest.setPassword(password);
+                                registerUser(signUpRequest);
+
 
                             }else{
                                 Toast.makeText(this, "Preencha sua senha.", Toast.LENGTH_SHORT).show();
@@ -90,6 +108,8 @@ public class SignUp extends AppCompatActivity {
 
 
     }
+
+    //Registrando usuário utilizando o FirebaseAuth
 
     private void cadastrarUsuario() {
 
@@ -122,6 +142,43 @@ public class SignUp extends AppCompatActivity {
             }
         });
     }
+
+    //Registrando usuario com a API
+
+    public void registerUser(SignUpRequest signUpRequest){
+        Call<SignUpResponse> signUpResponseCall = ApiClient.getService().registerUser(signUpRequest);
+        signUpResponseCall.enqueue(new Callback<SignUpResponse>() {
+            @Override
+            public void onResponse(Call<SignUpResponse> call, Response<SignUpResponse> response) {
+
+                if(response.isSuccessful()){
+
+
+                    String massage="Cadastrado com sucesso.";
+                    Toast.makeText(SignUp.this,massage,Toast.LENGTH_LONG).show();
+
+                    startActivity(new Intent(SignUp.this,SignIn.class));
+                    finish();
+                }else{
+                    String massage="Não foi possível o Cadastro.";
+                    Toast.makeText(SignUp.this,massage,Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<SignUpResponse> call, Throwable t) {
+                String massage=t.getLocalizedMessage();
+                Toast.makeText(SignUp.this,massage,Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+
+
+
+
+
 
 
 }

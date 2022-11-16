@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.mathschool.R;
 import com.example.mathschool.modelo.Usuario;
 import com.example.mathschool.utils.ConfigBD;
@@ -62,7 +63,13 @@ public class SignIn extends AppCompatActivity {
         email= findViewById(R.id.edit_email);
         password= findViewById(R.id.edit_password);
 
+
     }
+
+
+   //requisição a api
+
+
 
 
       public void validarAuthenticacao( View v){
