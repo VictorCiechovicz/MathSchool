@@ -109,7 +109,7 @@ public class SignUp extends AppCompatActivity {
 
     }
 
-    //Registrando usuário utilizando o FirebaseAuth
+    //Função para registrar usuário utilizando o FirebaseAuth.
 
     private void cadastrarUsuario() {
 
@@ -143,7 +143,7 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
-    //Registrando usuario com a API
+    //Função para registrar usuario com a RestAPI
 
     public void registerUser(SignUpRequest signUpRequest){
         Call<SignUpResponse> signUpResponseCall = ApiClient.getService().registerUser(signUpRequest);

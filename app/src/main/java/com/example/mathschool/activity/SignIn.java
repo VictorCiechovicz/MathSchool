@@ -11,6 +11,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+import com.example.mathschool.API.ApiClient;
+import com.example.mathschool.API.SignInRequest;
+import com.example.mathschool.API.SignInResponse;
 import com.example.mathschool.R;
 import com.example.mathschool.modelo.Usuario;
 import com.example.mathschool.utils.ConfigBD;
@@ -22,12 +25,16 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class SignIn extends AppCompatActivity {
 
      AppCompatButton button_signup;
      AppCompatButton button_signin;
-     EditText email;
-     EditText password;
+     EditText inemail;
+     EditText inpassword;
      FirebaseAuth mAuth;
      Usuario usuario;
 
@@ -60,32 +67,35 @@ public class SignIn extends AppCompatActivity {
 
         button_signup = findViewById(R.id.button_singUp);
         button_signin = findViewById(R.id.button_signin);
-        email= findViewById(R.id.edit_email);
-        password= findViewById(R.id.edit_password);
+        inemail= findViewById(R.id.edit_email);
+        inpassword= findViewById(R.id.edit_password);
 
 
     }
 
 
-   //requisição a api
-
-
 
 
       public void validarAuthenticacao( View v){
-        String inEmail = email.getText().toString();
-        String inPassword = password.getText().toString();
+        String email = inemail.getText().toString();
+        String password = inpassword.getText().toString();
         
         
-        if(!inEmail.isEmpty()){
-            if(!inPassword.isEmpty()){
+        if(!email.isEmpty()){
+            if(!password.isEmpty()){
 
-                    usuario = new Usuario();
-
+                    /*usuario = new Usuario();
                     usuario.setEmail(inEmail);
                     usuario.setPassword(inPassword);
+                    login(usuario);*/
 
-                    login(usuario);
+                SignInRequest signInRequest = new SignInRequest();
+
+                signInRequest.setEmail(email);
+                signInRequest.setPassword(password);
+                LoginUser(signInRequest);
+
+
 
             }else{
                 Toast.makeText(this, "Digite sua Senha.", Toast.LENGTH_SHORT).show();
@@ -95,6 +105,8 @@ public class SignIn extends AppCompatActivity {
         }
       }
 
+
+    //Função de SignIn de usuario utilizando o Firebase Auth
     private void login(Usuario usuario) {
 
         mAuth.signInWithEmailAndPassword(
@@ -140,5 +152,35 @@ public class SignIn extends AppCompatActivity {
         openHome();
     }
     }
+
+
+    //Função para registrar usuario com a RestAPI
+
+   public void LoginUser(SignInRequest signInRequest){
+        Call<SignInRequest> loginResponseCall = ApiClient.getService().loginUser(signInRequest);
+        loginResponseCall.enqueue(new Callback<SignInRequest>() {
+            @Override
+            public void onResponse(Call<SignInRequest> call, Response<SignInRequest> response) {
+
+
+                if(response.isSuccessful()){
+                    SignInResponse signInResponse = response.body();
+                        startActivity(new Intent(SignIn.this,Home.class).putExtra("data",signInResponse));
+                        finish();
+
+                }else{
+                    String massage="Não foi possível realizar Login.";
+                    Toast.makeText(SignIn.this,massage,Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<SignInRequest> call, Throwable t) {
+                String massage=t.getLocalizedMessage();
+                Toast.makeText(SignIn.this,massage,Toast.LENGTH_LONG).show();
+            }
+        });
+   }
+
 
 }

@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 
+import com.example.mathschool.API.SignInResponse;
 import com.example.mathschool.R;
 import com.example.mathschool.utils.ConfigBD;
 import com.google.android.material.navigation.NavigationView;
@@ -30,6 +31,8 @@ Toolbar toolbar;
 ActionBarDrawerToggle actionBarDrawerToggle;
 
     private FirebaseAuth mAuth;
+
+    SignInResponse signInResponse;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -96,6 +99,14 @@ ActionBarDrawerToggle actionBarDrawerToggle;
             }
         });
 
+
+
+        Intent intent = getIntent();
+        if(intent.getExtras() != null){
+            signInResponse = (SignInResponse) intent.getSerializableExtra("data");
+
+            Log.e("TAG","=========>" +signInResponse.getEmail());
+        }
 
 
     }

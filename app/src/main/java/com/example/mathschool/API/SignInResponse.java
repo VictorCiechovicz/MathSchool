@@ -1,6 +1,8 @@
 package com.example.mathschool.API;
 
-public class SignInResponse {
+import java.io.Serializable;
+
+public class SignInResponse implements Serializable {
 
     private String user_id;
     private String email;

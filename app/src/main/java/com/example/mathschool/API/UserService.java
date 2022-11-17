@@ -8,4 +8,10 @@ public interface UserService {
 
     @POST("users/create")
     Call<SignUpResponse> registerUser(@Body SignUpRequest signUpRequest);
+
+
+
 }
+
+
+
