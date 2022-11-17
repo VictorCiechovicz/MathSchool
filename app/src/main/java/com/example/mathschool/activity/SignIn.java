@@ -142,8 +142,6 @@ public class SignIn extends AppCompatActivity {
     private void openHome() {
         startActivity(new Intent(SignIn.this,Home.class));
     }
-
-
     @Override
     protected void onStart() {
     super.onStart();
@@ -157,11 +155,10 @@ public class SignIn extends AppCompatActivity {
     //Função para registrar usuario com a RestAPI
 
    public void LoginUser(SignInRequest signInRequest){
-        Call<SignInRequest> loginResponseCall = ApiClient.getService().loginUser(signInRequest);
-        loginResponseCall.enqueue(new Callback<SignInRequest>() {
+            Call<SignInResponse> loginResponseCall = ApiClient.getService().loginUser(signInRequest);
+        loginResponseCall.enqueue(new Callback<SignInResponse>() {
             @Override
-            public void onResponse(Call<SignInRequest> call, Response<SignInRequest> response) {
-
+            public void onResponse(Call<SignInResponse> call, Response<SignInResponse> response) {
 
                 if(response.isSuccessful()){
                     SignInResponse signInResponse = response.body();
@@ -175,7 +172,7 @@ public class SignIn extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<SignInRequest> call, Throwable t) {
+            public void onFailure(Call<SignInResponse> call, Throwable t) {
                 String massage=t.getLocalizedMessage();
                 Toast.makeText(SignIn.this,massage,Toast.LENGTH_LONG).show();
             }

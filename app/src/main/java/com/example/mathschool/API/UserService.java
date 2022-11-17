@@ -9,7 +9,8 @@ public interface UserService {
     @POST("users/create")
     Call<SignUpResponse> registerUser(@Body SignUpRequest signUpRequest);
 
-
+   @POST("autenticate/")
+    Call<SignInResponse> loginUser(@Body SignInRequest signInRequest);
 
 }
 

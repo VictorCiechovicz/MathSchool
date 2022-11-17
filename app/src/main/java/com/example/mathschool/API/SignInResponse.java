@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class SignInResponse implements Serializable {
 
-    private String user_id;
+    private String id;
     private String email;
     private String password;
 
-    public String getUser_id() {
-        return user_id;
+    public String getId() {
+        return id;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getEmail() {
