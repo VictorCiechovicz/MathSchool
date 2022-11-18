@@ -84,16 +84,19 @@ public class SignIn extends AppCompatActivity {
         if(!email.isEmpty()){
             if(!password.isEmpty()){
 
-                    /*usuario = new Usuario();
-                    usuario.setEmail(inEmail);
-                    usuario.setPassword(inPassword);
-                    login(usuario);*/
+                //Função de SignIn de usuario utilizando o Firebase Auth
+                    usuario = new Usuario();
+                    usuario.setEmail(email);
+                    usuario.setPassword(password);
+                    login(usuario);
 
-                SignInRequest signInRequest = new SignInRequest();
 
+                //Função para registrar usuario com a RestAPI
+               /* SignInRequest signInRequest = new SignInRequest();
                 signInRequest.setEmail(email);
                 signInRequest.setPassword(password);
-                LoginUser(signInRequest);
+                LoginUser(signInRequest);*/
+
 
 
 
@@ -177,7 +180,13 @@ public class SignIn extends AppCompatActivity {
                 Toast.makeText(SignIn.this,massage,Toast.LENGTH_LONG).show();
             }
         });
-   }
+
+    }
 
 
 }
+
+
+
+
+

@@ -32,7 +32,6 @@ ActionBarDrawerToggle actionBarDrawerToggle;
 
     private FirebaseAuth mAuth;
 
-    SignInResponse signInResponse;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -98,15 +97,6 @@ ActionBarDrawerToggle actionBarDrawerToggle;
                 return true;
             }
         });
-
-
-
-        Intent intent = getIntent();
-        if(intent.getExtras() != null){
-            signInResponse = (SignInResponse) intent.getSerializableExtra("data");
-
-            Log.e("TAG","=========>" +signInResponse.getEmail());
-        }
 
 
     }

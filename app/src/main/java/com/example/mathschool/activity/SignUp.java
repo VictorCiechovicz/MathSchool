@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.mathschool.API.ApiClient;
 import com.example.mathschool.API.SignUpRequest;
 import com.example.mathschool.API.SignUpResponse;
+import com.example.mathschool.API.UserService;
 import com.example.mathschool.R;
 import com.example.mathschool.modelo.Usuario;
 import com.example.mathschool.utils.ConfigBD;
@@ -76,20 +77,25 @@ public class SignUp extends AppCompatActivity {
                         if(!email.isEmpty()){
                             if(!password.isEmpty()){
 
-                                /*usuario = new Usuario();
-                                usuario.setFirstName(firstname);
-                                usuario.setLastName(lastname);
-                                usuario.setEmail(inEmail);
-                                usuario.setPassword(inPassword);
-                                cadastrarUsuario();*/
+                                //Função para registrar usuário utilizando o FirebaseAuth.
+                                usuario = new Usuario();
+                                usuario.setFirstName(firstName);
+                                usuario.setLastName(lastName);
+                                usuario.setEmail(email);
+                                usuario.setPassword(password);
+                                cadastrarUsuario();
 
-                                SignUpRequest signUpRequest= new SignUpRequest();
+
+
+                                //Função para registrar usuario com a RestAPI
+
+                               /* SignUpRequest signUpRequest= new SignUpRequest();
 
                                 signUpRequest.setFirstName(firstName);
                                 signUpRequest.setLastname(lastName);
                                 signUpRequest.setEmail(email);
                                 signUpRequest.setPassword(password);
-                                registerUser(signUpRequest);
+                                registerUser(signUpRequest);*/
 
 
                             }else{
@@ -157,7 +163,7 @@ public class SignUp extends AppCompatActivity {
                     String massage="Cadastrado com sucesso.";
                     Toast.makeText(SignUp.this,massage,Toast.LENGTH_LONG).show();
 
-                    startActivity(new Intent(SignUp.this,SignIn.class));
+                    startActivity(new Intent(SignUp.this,Home.class));
                     finish();
                 }else{
                     String massage="Não foi possível o Cadastro.";
@@ -173,7 +179,6 @@ public class SignUp extends AppCompatActivity {
             }
         });
     }
-
 
 
 
